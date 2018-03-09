@@ -1,0 +1,59 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  margin: 0
+}
+
+html {
+  background-color: #7be1e5
+}
+
+#ContactList {
+  margin: 15px;
+}
+
+.homePageContainer {
+  align-content: center;
+  text-align: center;
+}
+
+/*
+All Contact List Styles
+*/
+
+.newContactButtonContainer {
+  display: flex;
+  float: right;
+  margin: auto 0;
+}
+
+.contactListHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+SingleContactList Styles
+*/
+
+.singleContact {
+  margin: 30px
+}
+
+.singleContactContainer {
+  justify-content: space-between;
+}
+
+.singleContactEditButton {
+  float: right;
+  margin-right: 15px;
+}
+
+.singleContactName {
+  margin-left: 15px;
+  text-align: center;
+}
