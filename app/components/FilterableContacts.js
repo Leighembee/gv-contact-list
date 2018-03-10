@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import FilterInput from './FilterInput'
 import ContactList from './ContactList'
 
-export default class FilterableArtists extends React.Component {
+export default class FilterableContacts extends React.Component {
 
   constructor(props) {
     super(props)

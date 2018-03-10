@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 import ContactFormContainer from './ContactFormContainer'
 import EditContactFormContainer from './EditContactFormContainer'
-import AutoComplete from 'material-ui/AutoComplete'
 import DeleteButton from 'material-ui/svg-icons/action/delete'
 import IconButton from 'material-ui/IconButton'
 import {
