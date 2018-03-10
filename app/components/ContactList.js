@@ -57,7 +57,6 @@ const ContactList = (props) => {
                     </TableRowColumn>
                     <TableRowColumn style={{ width: 5 }}>
                       <IconButton onClick={() => props.deleteAContact(contact)} tooltip='Delete Contact'>
-                      {console.log('props!!!', contact)}
                         <DeleteButton />
                       </IconButton>
                     </TableRowColumn>
