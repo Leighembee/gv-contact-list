@@ -48,7 +48,7 @@ const ContactList = (props) => {
                       <EditContactFormContainer contact={contact} />
                     </TableRowColumn>
                     <TableRowColumn style={{ width: 5 }}>
-                      <IconButton onClick={() => props.deleteContact(contact)} tooltip='Delete Contact'>
+                      <IconButton onClick={() => props.deleteAContact(contact)} tooltip='Delete Contact'>
                         <DeleteButton />
                       </IconButton>
                     </TableRowColumn>
