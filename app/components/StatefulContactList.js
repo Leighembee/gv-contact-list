@@ -14,8 +14,8 @@ class StatefulContactList extends Component {
 
   render() {
     return (
-      <ContactList contacts={this.props.contacts} deleteAContact={this.props.deleteAContact} />
-      // <FilterableContacts contacts={this.props.contacts} deleteAContact={this.props.deleteAContact} />
+      <ContactList contacts={this.props.contacts} deleteAContact={this.props.deleteAContact} />,
+      <FilterableContacts contacts={this.props.contacts} deleteAContact={this.props.deleteAContact} />
     )
   }
 }

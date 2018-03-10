@@ -31,7 +31,7 @@ export default class FilterableArtists extends React.Component {
           handleChange={this.handleChange}
           inputValue={inputValue}
         />
-        <ContactList contacts={filteredContacts} />
+        <ContactList contacts={filteredContacts} deleteAContact={this.props.deleteAContact}/>
       </div>
     )
   }
