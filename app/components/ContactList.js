@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom'
+import sortBy from 'lodash'
 import ContactFormContainer from './ContactFormContainer'
 import EditContactFormContainer from './EditContactFormContainer'
 import DeleteButton from 'material-ui/svg-icons/action/delete'
@@ -16,6 +17,7 @@ import {
 } from 'material-ui/Table'
 
 const ContactList = (props) => {
+  let sortedByName = _.sortBy(props.contacts, 'firstName')
   return (
     <div className="contactListMain">
       <div id='contactList'>
@@ -38,7 +40,7 @@ const ContactList = (props) => {
                 </TableRow>
               </TableHeader>
               <TableBody displayRowCheckbox={false}>
-                {props.contacts.map((contact) => (
+                {sortedByName.map((contact) => (
                   <TableRow key={contact.id}>
                     <TableRowColumn style={{ width: 140 }}>{contact.fullName}</TableRowColumn>
                     <TableRowColumn style={{ width: 140 }}>{contact.phoneNumber}</TableRowColumn>
