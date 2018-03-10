@@ -67,7 +67,7 @@ export const editContact = (contactObj, history) => {
   }
 }
 
-export const deleteContact = (Contact) => {
+export const deleteContact = (contact) => {
   return function thunk(dispatch) {
     axios.delete('/api/contacts/' + contact.id)
       .then((res) => {

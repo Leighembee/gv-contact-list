@@ -2,17 +2,20 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchContacts } from '../reducers/contacts'
 import ContactList from './ContactList'
+import FilterableContacts from './FilterableContacts'
 import { deleteContact } from '../reducers/contacts'
 
 
 class StatefulContactList extends Component {
+
   componentDidMount() {
     this.props.loadContacts()
   }
 
   render() {
     return (
-      <ContactList contacts={this.props.contacts} deleteAContact={this.props.deleteAContact} />
+      <ContactList contacts={this.props.contacts} deleteAContact={this.props.deleteAContact} />,
+      <FilterableContacts contacts={this.props.contacts} deleteAContact={this.props.deleteAContact} />
     )
   }
 }

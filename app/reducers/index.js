@@ -6,7 +6,7 @@ import singleContact from './singleContact'
 const rootReducer = combineReducers({
   contacts,
   currentContacts,
-  singleContact
+  singleContact,
 })
 
 export default rootReducer

@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 import ContactFormContainer from './ContactFormContainer'
 import EditContactFormContainer from './EditContactFormContainer'
+import AutoComplete from 'material-ui/AutoComplete'
 import DeleteButton from 'material-ui/svg-icons/action/delete'
 import IconButton from 'material-ui/IconButton'
 import {
@@ -26,7 +27,6 @@ const ContactList = (props) => {
           </div>
         </div>
         <div className="singleContactContainer">
-
           <div>
             <Table style={{ opacity: 0.5 }}>
               <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
@@ -64,5 +64,6 @@ const ContactList = (props) => {
     </div>
   )
 }
+
 
 export default ContactList
