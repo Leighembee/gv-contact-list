@@ -48,7 +48,6 @@ function mapDispactToProps(dispatch, ownProps) {
   return {
     handleSubmit(event) {
       event.preventDefault()
-      dispatch(fetchOneCampus(ownProps.formProps.value))
       dispatch(editOneContact({
         id: ownProps.formProps.id,
         firstName: ownProps.formProps.firstName,
